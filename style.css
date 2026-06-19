@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #0a0a0a;
+    color: #00ff88;
+}
+
+/* صفحه ورود */
+#login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #111, #000);
+}
+
+/* ورودی‌ها */
+input {
+    padding: 12px;
+    margin: 6px;
+    border: 1px solid #00ff88;
+    border-radius: 10px;
+    background: #111;
+    color: #00ff88;
+    outline: none;
+}
+
+/* دکمه */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #00ff88;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #00ff88;
+    transform: scale(1.05);
+}
+
+/* صفحه چت */
+#chatPage {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* هدر */
+header {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #00ff88;
+}
+
+/* پیام‌ها */
+#messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.msg {
+    background: #111;
+    border: 1px solid #00ff88;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 12px;
+    width: fit-content;
+    max-width: 70%;
+    animation: fade 0.2s ease-in;
+}
+
+@keyframes fade {
+    from {opacity:0; transform:translateY(10px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+/* فوتر */
+footer {
+    display: flex;
+    padding: 10px;
+    background: #111;
+    border-top: 1px solid #00ff88;
+}
