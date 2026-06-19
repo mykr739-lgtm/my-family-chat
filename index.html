@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>چت پتو</title>
+
+<!-- ✅ اتصال CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔐 ورود -->
+<div id="login">
+    <h2>ورود به چت</h2>
+    <input id="pass" type="password" placeholder="رمز ورود">
+    <button onclick="login()">ورود</button>
+    <p id="msg"></p>
+</div>
+
+<!-- 💬 چت -->
+<div id="chatPage">
+
+<header>چت اصلی</header>
+
+<div id="messages"></div>
+
+<footer>
+    <input id="text" placeholder="پیام بنویس...">
+    <button onclick="send()">ارسال</button>
+</footer>
+
+</div>
+
+<!-- ✅ اتصال JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
